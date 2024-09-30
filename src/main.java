@@ -1,10 +1,12 @@
 public class main {
     public static void main(String[] args) {
-        double TAX_RATE = 0.05;
+        final double TAX_RATE = 0.05;
         double salesTax = 0;
-        int itemCost = 5; //this would be the input
-        System.out.println("What is the cost of your purchase? (for the sake of this lab lets say your subtotal is 5 dollars)"); //User inputs cost here
+        int itemCost = 5;
+
         salesTax = itemCost * TAX_RATE;
-        System.out.println("You are paying " + salesTax + " dollars in sales tax");
+
+        System.out.println("THe sales tax on the purchase price of " + itemCost + " dollars is " + salesTax + " dollars");
+
     }
 }
